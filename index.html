@@ -2,32 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Kite Launcher | Bilal Yusuf</title>
     <style>
-        /* This makes the slide to the bottom smooth */
-        html { scroll-behavior: smooth; } 
-
-        body { margin: 0; padding: 0; background: #ffffff; display: flex; flex-direction: column; align-items: center; }
-        .container { width: 100%; max-width: 1000px; position: relative; }
-        img { width: 100%; height: auto; display: block; border: none; }
-        area { cursor: pointer; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Prevents double scrollbars */
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="Kite launcher.png" usemap="#image-map">
-
-        <map name="image-map">
-            <area target="_blank" alt="YouTube" title="YouTube" href="https://youtube.com/@windowswithbilal" coords="534,1415,929,1500" shape="rect">
-            
-            <area target="_self" alt="Download" title="Download" href="#download-section" coords="544,647,826,726" shape="rect">
-        </map>
-
-        <div id="download-section" style="height: 10px; width: 100%;"></div>
-    </div>
+    <iframe src="https://kitelauncher.my.canva.site/
+    " allowfullscreen></iframe>
 
 </body>
-</html>
 </html>
