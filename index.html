@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kite Launcher | Bilal Yusuf</title>
     <style>
-        /* This makes the "sliding" animation happen */
+        /* This makes the slide to the bottom smooth */
         html { scroll-behavior: smooth; } 
 
         body { margin: 0; padding: 0; background: #ffffff; display: flex; flex-direction: column; align-items: center; }
         .container { width: 100%; max-width: 1000px; position: relative; }
-        img { width: 100%; height: auto; display: block; }
+        img { width: 100%; height: auto; display: block; border: none; }
         area { cursor: pointer; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="website.png" usemap="#image-map">
+        <img src="Kite launcher.png" usemap="#image-map">
 
         <map name="image-map">
-            <area shape="rect" coords="300,400,700,600" href="#download-section" alt="Jump to Bottom">
+            <area target="_blank" alt="YouTube" title="YouTube" href="https://youtube.com/@windowswithbilal" coords="534,1415,929,1500" shape="rect">
             
-            <area shape="rect" coords="300,1500,700,1700" href="youtube.com/@windowswithbilal" target="_blank" alt="YouTube">
+            <area target="_self" alt="Download" title="Download" href="#download-section" coords="544,647,826,726" shape="rect">
         </map>
 
-        <div id="download-section" style="height: 1px; width: 100%;"></div>
+        <div id="download-section" style="height: 10px; width: 100%;"></div>
     </div>
 
 </body>
+</html>
 </html>
